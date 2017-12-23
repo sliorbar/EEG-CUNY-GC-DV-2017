@@ -1,0 +1,2599 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10300.17.0728.2252                               -->
+<workbook source-build='10.3.2 (10300.17.0728.2252)' source-platform='win' version='10.3' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Max EEG data' inline='true' name='federated.1ko0jj60nu2ddi139k8zd0mcovx4' version='10.3'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Max EEG data' name='textscan.1oogalh1symd85147fbct1a1cmfe'>
+            <connection class='textscan' directory='C:/Users/lior_/Documents/Education/GC/Data visualization/DV Class Fall 2017/Project/Final_Project_files' filename='Max EEG data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1oogalh1symd85147fbct1a1cmfe' name='Max EEG data.csv' table='[Max EEG data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='Video ID' ordinal='1' />
+            <column datatype='integer' name='Subject ID' ordinal='2' />
+            <column datatype='real' name='Attention (Proprietary measure of mental focus)' ordinal='3' />
+            <column datatype='real' name='Mediation (Proprietary measure of calmness)' ordinal='4' />
+            <column datatype='real' name='Raw (Raw EEG signal)' ordinal='5' />
+            <column datatype='real' name='Delta (1-3 Hz of power spectrum)' ordinal='6' />
+            <column datatype='real' name='Theta (4-7 Hz of power spectrum)' ordinal='7' />
+            <column datatype='real' name='Alpha 1 (Lower 8-11 Hz of power spectrum)' ordinal='8' />
+            <column datatype='real' name='Alpha 2 (Higher 8-11 Hz of power spectrum)' ordinal='9' />
+            <column datatype='real' name='Beta 1 (Lower 12-29 Hz of power spectrum)' ordinal='10' />
+            <column datatype='real' name='Beta 2 (Higher 12-29 Hz of power spectrum)' ordinal='11' />
+            <column datatype='real' name='Gamma 1 (Lower 30-100 Hz of power spectrum)' ordinal='12' />
+            <column datatype='real' name='Gamma 2 (Higher 30-100 Hz of power spectrum)' ordinal='13' />
+            <column datatype='integer' name='predefined label (whether the subject is expected to be confused)' ordinal='14' />
+            <column datatype='integer' name='Error' ordinal='15' />
+            <column datatype='integer' name='Difference Between predicted and actual' ordinal='16' />
+            <column datatype='integer' name='user-defined label (whether the subject is actually confused)' ordinal='17' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Max EEG data.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Video ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Video ID]</local-name>
+            <parent-name>[Max EEG data.csv]</parent-name>
+            <remote-alias>Video ID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Subject ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Subject ID]</local-name>
+            <parent-name>[Max EEG data.csv]</parent-name>
+            <remote-alias>Subject ID</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Attention (Proprietary measure of mental focus)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Attention (Proprietary measure of mental focus)]</local-name>
+            <parent-name>[Max EEG data.csv]</parent-name>
+            <remote-alias>Attention (Proprietary measure of mental focus)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mediation (Proprietary measure of calmness)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Mediation (Proprietary measure of calmness)]</local-name>
+            <parent-name>[Max EEG data.csv]</parent-name>
+            <remote-alias>Mediation (Proprietary measure of calmness)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Raw (Raw EEG signal)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Raw (Raw EEG signal)]</local-name>
+            <parent-name>[Max EEG data.csv]</parent-name>
+            <remote-alias>Raw (Raw EEG signal)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Delta (1-3 Hz of power spectrum)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Delta (1-3 Hz of power spectrum)]</local-name>
+            <parent-name>[Max EEG data.csv]</parent-name>
+            <remote-alias>Delta (1-3 Hz of power spectrum)</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Theta (4-7 Hz of power spectrum)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Theta (4-7 Hz of power spectrum)]</local-name>
+            <parent-name>[Max EEG data.csv]</parent-name>
+            <remote-alias>Theta (4-7 Hz of power spectrum)</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Alpha 1 (Lower 8-11 Hz of power spectrum)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Alpha 1 (Lower 8-11 Hz of power spectrum)]</local-name>
+            <parent-name>[Max EEG data.csv]</parent-name>
+            <remote-alias>Alpha 1 (Lower 8-11 Hz of power spectrum)</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Alpha 2 (Higher 8-11 Hz of power spectrum)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Alpha 2 (Higher 8-11 Hz of power spectrum)]</local-name>
+            <parent-name>[Max EEG data.csv]</parent-name>
+            <remote-alias>Alpha 2 (Higher 8-11 Hz of power spectrum)</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Beta 1 (Lower 12-29 Hz of power spectrum)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Beta 1 (Lower 12-29 Hz of power spectrum)]</local-name>
+            <parent-name>[Max EEG data.csv]</parent-name>
+            <remote-alias>Beta 1 (Lower 12-29 Hz of power spectrum)</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Beta 2 (Higher 12-29 Hz of power spectrum)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Beta 2 (Higher 12-29 Hz of power spectrum)]</local-name>
+            <parent-name>[Max EEG data.csv]</parent-name>
+            <remote-alias>Beta 2 (Higher 12-29 Hz of power spectrum)</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gamma 1 (Lower 30-100 Hz of power spectrum)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Gamma 1 (Lower 30-100 Hz of power spectrum)]</local-name>
+            <parent-name>[Max EEG data.csv]</parent-name>
+            <remote-alias>Gamma 1 (Lower 30-100 Hz of power spectrum)</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gamma 2 (Higher 30-100 Hz of power spectrum)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Gamma 2 (Higher 30-100 Hz of power spectrum)]</local-name>
+            <parent-name>[Max EEG data.csv]</parent-name>
+            <remote-alias>Gamma 2 (Higher 30-100 Hz of power spectrum)</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>predefined label (whether the subject is expected to be confused)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[predefined label (whether the subject is expected to be confused)]</local-name>
+            <parent-name>[Max EEG data.csv]</parent-name>
+            <remote-alias>predefined label (whether the subject is expected to be confused)</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Error</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Error]</local-name>
+            <parent-name>[Max EEG data.csv]</parent-name>
+            <remote-alias>Error</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Difference Between predicted and actual</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Difference Between predicted and actual]</local-name>
+            <parent-name>[Max EEG data.csv]</parent-name>
+            <remote-alias>Difference Between predicted and actual</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user-defined label (whether the subject is actually confused)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[user-defined label (whether the subject is actually confused)]</local-name>
+            <parent-name>[Max EEG data.csv]</parent-name>
+            <remote-alias>user-defined label (whether the subject is actually confused)</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Max EEG data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='integer' name='[Subject ID]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Video ID]' role='dimension' type='ordinal' />
+      <column caption='Predefined Label (Whether The Subject Is Expected To Be Confused)' datatype='integer' name='[predefined label (whether the subject is expected to be confused)]' role='measure' type='quantitative' />
+      <column caption='User-Defined Label (Whether The Subject Is Actually Confused)' datatype='integer' name='[user-defined label (whether the subject is actually confused)]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.242384' measure-ordering='alphabetic' measure-percentage='0.757616' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='Mean EEG data ' inline='true' name='federated.02q2tb91rxiixl1augx001xw6gjw' version='10.3'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Mean EEG data' name='textscan.03fy7vb1ornos3133yzux1872hzk'>
+            <connection class='textscan' directory='C:/Users/lior_/Documents/Education/GC/Data visualization/DV Class Fall 2017/Project/Final_Project_files' filename='Mean EEG data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.03fy7vb1ornos3133yzux1872hzk' name='Mean EEG data.csv' table='[Mean EEG data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='Video ID' ordinal='1' />
+            <column datatype='integer' name='Subject ID' ordinal='2' />
+            <column datatype='real' name='Attention (Proprietary measure of mental focus)' ordinal='3' />
+            <column datatype='real' name='Mediation (Proprietary measure of calmness)' ordinal='4' />
+            <column datatype='real' name='Raw (Raw EEG signal)' ordinal='5' />
+            <column datatype='real' name='Delta (1-3 Hz of power spectrum)' ordinal='6' />
+            <column datatype='real' name='Theta (4-7 Hz of power spectrum)' ordinal='7' />
+            <column datatype='real' name='Alpha 1 (Lower 8-11 Hz of power spectrum)' ordinal='8' />
+            <column datatype='real' name='Alpha 2 (Higher 8-11 Hz of power spectrum)' ordinal='9' />
+            <column datatype='real' name='Beta 1 (Lower 12-29 Hz of power spectrum)' ordinal='10' />
+            <column datatype='real' name='Beta 2 (Higher 12-29 Hz of power spectrum)' ordinal='11' />
+            <column datatype='real' name='Gamma 1 (Lower 30-100 Hz of power spectrum)' ordinal='12' />
+            <column datatype='real' name='Gamma 2 (Higher 30-100 Hz of power spectrum)' ordinal='13' />
+            <column datatype='integer' name='predefined label (whether the subject is expected to be confused)' ordinal='14' />
+            <column datatype='integer' name='Error' ordinal='15' />
+            <column datatype='integer' name='Difference Between predicted and actual' ordinal='16' />
+            <column datatype='integer' name='user-defined label (whether the subject is actually confused)' ordinal='17' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Mean EEG data.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Video ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Video ID]</local-name>
+            <parent-name>[Mean EEG data.csv]</parent-name>
+            <remote-alias>Video ID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Subject ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Subject ID]</local-name>
+            <parent-name>[Mean EEG data.csv]</parent-name>
+            <remote-alias>Subject ID</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Attention (Proprietary measure of mental focus)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Attention (Proprietary measure of mental focus)]</local-name>
+            <parent-name>[Mean EEG data.csv]</parent-name>
+            <remote-alias>Attention (Proprietary measure of mental focus)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mediation (Proprietary measure of calmness)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Mediation (Proprietary measure of calmness)]</local-name>
+            <parent-name>[Mean EEG data.csv]</parent-name>
+            <remote-alias>Mediation (Proprietary measure of calmness)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Raw (Raw EEG signal)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Raw (Raw EEG signal)]</local-name>
+            <parent-name>[Mean EEG data.csv]</parent-name>
+            <remote-alias>Raw (Raw EEG signal)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Delta (1-3 Hz of power spectrum)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Delta (1-3 Hz of power spectrum)]</local-name>
+            <parent-name>[Mean EEG data.csv]</parent-name>
+            <remote-alias>Delta (1-3 Hz of power spectrum)</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Theta (4-7 Hz of power spectrum)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Theta (4-7 Hz of power spectrum)]</local-name>
+            <parent-name>[Mean EEG data.csv]</parent-name>
+            <remote-alias>Theta (4-7 Hz of power spectrum)</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Alpha 1 (Lower 8-11 Hz of power spectrum)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Alpha 1 (Lower 8-11 Hz of power spectrum)]</local-name>
+            <parent-name>[Mean EEG data.csv]</parent-name>
+            <remote-alias>Alpha 1 (Lower 8-11 Hz of power spectrum)</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Alpha 2 (Higher 8-11 Hz of power spectrum)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Alpha 2 (Higher 8-11 Hz of power spectrum)]</local-name>
+            <parent-name>[Mean EEG data.csv]</parent-name>
+            <remote-alias>Alpha 2 (Higher 8-11 Hz of power spectrum)</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Beta 1 (Lower 12-29 Hz of power spectrum)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Beta 1 (Lower 12-29 Hz of power spectrum)]</local-name>
+            <parent-name>[Mean EEG data.csv]</parent-name>
+            <remote-alias>Beta 1 (Lower 12-29 Hz of power spectrum)</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Beta 2 (Higher 12-29 Hz of power spectrum)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Beta 2 (Higher 12-29 Hz of power spectrum)]</local-name>
+            <parent-name>[Mean EEG data.csv]</parent-name>
+            <remote-alias>Beta 2 (Higher 12-29 Hz of power spectrum)</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gamma 1 (Lower 30-100 Hz of power spectrum)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Gamma 1 (Lower 30-100 Hz of power spectrum)]</local-name>
+            <parent-name>[Mean EEG data.csv]</parent-name>
+            <remote-alias>Gamma 1 (Lower 30-100 Hz of power spectrum)</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gamma 2 (Higher 30-100 Hz of power spectrum)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Gamma 2 (Higher 30-100 Hz of power spectrum)]</local-name>
+            <parent-name>[Mean EEG data.csv]</parent-name>
+            <remote-alias>Gamma 2 (Higher 30-100 Hz of power spectrum)</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>predefined label (whether the subject is expected to be confused)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[predefined label (whether the subject is expected to be confused)]</local-name>
+            <parent-name>[Mean EEG data.csv]</parent-name>
+            <remote-alias>predefined label (whether the subject is expected to be confused)</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Error</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Error]</local-name>
+            <parent-name>[Mean EEG data.csv]</parent-name>
+            <remote-alias>Error</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Difference Between predicted and actual</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Difference Between predicted and actual]</local-name>
+            <parent-name>[Mean EEG data.csv]</parent-name>
+            <remote-alias>Difference Between predicted and actual</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user-defined label (whether the subject is actually confused)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[user-defined label (whether the subject is actually confused)]</local-name>
+            <parent-name>[Mean EEG data.csv]</parent-name>
+            <remote-alias>user-defined label (whether the subject is actually confused)</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Mean EEG data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='integer' name='[Subject ID]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Video ID]' role='dimension' type='ordinal' />
+      <column caption='Predefined Label (Whether The Subject Is Expected To Be Confused)' datatype='integer' name='[predefined label (whether the subject is expected to be confused)]' role='measure' type='quantitative' />
+      <column caption='User-Defined Label (Whether The Subject Is Actually Confused)' datatype='integer' name='[user-defined label (whether the subject is actually confused)]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.242384' measure-ordering='alphabetic' measure-percentage='0.757616' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='Mean EEG data' inline='true' name='federated.1gzz5yt0bpg6ib1fe09u000yropi' version='10.3'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Mean EEG data' name='textscan.12y5vjt1c4e36c1aebrp71u5qoxi'>
+            <connection class='textscan' cleaning='yes' compat='no' csvFile='/Users/alirishty/Documents/Graduate/Data Visualization/Final Project/Mean EEG data.csv' dataRefreshTime='' directory='C:/Users/lior_/Documents/Education/GC/Data visualization/DV Class Fall 2017/Project/Final_Project_files' filename='Mean EEG data.csv' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.12y5vjt1c4e36c1aebrp71u5qoxi' name='Mean EEG data.csv' table='[Mean EEG data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='Video ID' ordinal='1' />
+            <column datatype='integer' name='Subject ID' ordinal='2' />
+            <column datatype='real' name='Attention (Proprietary measure of mental focus)' ordinal='3' />
+            <column datatype='real' name='Mediation (Proprietary measure of calmness)' ordinal='4' />
+            <column datatype='real' name='Raw (Raw EEG signal)' ordinal='5' />
+            <column datatype='real' name='Delta (1-3 Hz of power spectrum)' ordinal='6' />
+            <column datatype='real' name='Theta (4-7 Hz of power spectrum)' ordinal='7' />
+            <column datatype='real' name='Alpha 1 (Lower 8-11 Hz of power spectrum)' ordinal='8' />
+            <column datatype='real' name='Alpha 2 (Higher 8-11 Hz of power spectrum)' ordinal='9' />
+            <column datatype='real' name='Beta 1 (Lower 12-29 Hz of power spectrum)' ordinal='10' />
+            <column datatype='real' name='Beta 2 (Higher 12-29 Hz of power spectrum)' ordinal='11' />
+            <column datatype='real' name='Gamma 1 (Lower 30-100 Hz of power spectrum)' ordinal='12' />
+            <column datatype='real' name='Gamma 2 (Higher 30-100 Hz of power spectrum)' ordinal='13' />
+            <column datatype='integer' name='predefined label (whether the subject is expected to be confused)' ordinal='14' />
+            <column datatype='integer' name='Error' ordinal='15' />
+            <column datatype='integer' name='Difference Between predicted and actual' ordinal='16' />
+            <column datatype='integer' name='user-defined label (whether the subject is actually confused)' ordinal='17' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Mean EEG data.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Video ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Video ID]</local-name>
+            <parent-name>[Mean EEG data.csv]</parent-name>
+            <remote-alias>Video ID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Subject ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Subject ID]</local-name>
+            <parent-name>[Mean EEG data.csv]</parent-name>
+            <remote-alias>Subject ID</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Attention (Proprietary measure of mental focus)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Attention (Proprietary measure of mental focus)]</local-name>
+            <parent-name>[Mean EEG data.csv]</parent-name>
+            <remote-alias>Attention (Proprietary measure of mental focus)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mediation (Proprietary measure of calmness)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Mediation (Proprietary measure of calmness)]</local-name>
+            <parent-name>[Mean EEG data.csv]</parent-name>
+            <remote-alias>Mediation (Proprietary measure of calmness)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Raw (Raw EEG signal)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Raw (Raw EEG signal)]</local-name>
+            <parent-name>[Mean EEG data.csv]</parent-name>
+            <remote-alias>Raw (Raw EEG signal)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Delta (1-3 Hz of power spectrum)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Delta (1-3 Hz of power spectrum)]</local-name>
+            <parent-name>[Mean EEG data.csv]</parent-name>
+            <remote-alias>Delta (1-3 Hz of power spectrum)</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Theta (4-7 Hz of power spectrum)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Theta (4-7 Hz of power spectrum)]</local-name>
+            <parent-name>[Mean EEG data.csv]</parent-name>
+            <remote-alias>Theta (4-7 Hz of power spectrum)</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Alpha 1 (Lower 8-11 Hz of power spectrum)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Alpha 1 (Lower 8-11 Hz of power spectrum)]</local-name>
+            <parent-name>[Mean EEG data.csv]</parent-name>
+            <remote-alias>Alpha 1 (Lower 8-11 Hz of power spectrum)</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Alpha 2 (Higher 8-11 Hz of power spectrum)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Alpha 2 (Higher 8-11 Hz of power spectrum)]</local-name>
+            <parent-name>[Mean EEG data.csv]</parent-name>
+            <remote-alias>Alpha 2 (Higher 8-11 Hz of power spectrum)</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Beta 1 (Lower 12-29 Hz of power spectrum)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Beta 1 (Lower 12-29 Hz of power spectrum)]</local-name>
+            <parent-name>[Mean EEG data.csv]</parent-name>
+            <remote-alias>Beta 1 (Lower 12-29 Hz of power spectrum)</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Beta 2 (Higher 12-29 Hz of power spectrum)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Beta 2 (Higher 12-29 Hz of power spectrum)]</local-name>
+            <parent-name>[Mean EEG data.csv]</parent-name>
+            <remote-alias>Beta 2 (Higher 12-29 Hz of power spectrum)</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gamma 1 (Lower 30-100 Hz of power spectrum)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Gamma 1 (Lower 30-100 Hz of power spectrum)]</local-name>
+            <parent-name>[Mean EEG data.csv]</parent-name>
+            <remote-alias>Gamma 1 (Lower 30-100 Hz of power spectrum)</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gamma 2 (Higher 30-100 Hz of power spectrum)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Gamma 2 (Higher 30-100 Hz of power spectrum)]</local-name>
+            <parent-name>[Mean EEG data.csv]</parent-name>
+            <remote-alias>Gamma 2 (Higher 30-100 Hz of power spectrum)</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>predefined label (whether the subject is expected to be confused)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[predefined label (whether the subject is expected to be confused)]</local-name>
+            <parent-name>[Mean EEG data.csv]</parent-name>
+            <remote-alias>predefined label (whether the subject is expected to be confused)</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Error</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Error]</local-name>
+            <parent-name>[Mean EEG data.csv]</parent-name>
+            <remote-alias>Error</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Difference Between predicted and actual</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Difference Between predicted and actual]</local-name>
+            <parent-name>[Mean EEG data.csv]</parent-name>
+            <remote-alias>Difference Between predicted and actual</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user-defined label (whether the subject is actually confused)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[user-defined label (whether the subject is actually confused)]</local-name>
+            <parent-name>[Mean EEG data.csv]</parent-name>
+            <remote-alias>user-defined label (whether the subject is actually confused)</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Mean EEG data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Alpha 2 (Higher 8-11 Hz of power spectrum)1' datatype='real' name='[Alpha 2 (Higher 8-11 Hz of power spectrum)]' role='measure' type='quantitative' />
+      <column caption='Beta 1 (Lower 12-29 Hz of power spectrum)1' datatype='real' name='[Beta 1 (Lower 12-29 Hz of power spectrum)]' role='measure' type='quantitative' />
+      <column caption='Beta 2 (Higher 12-29 Hz of power spectrum)1' datatype='real' name='[Beta 2 (Higher 12-29 Hz of power spectrum)]' role='measure' type='quantitative' />
+      <column caption='Confusion' datatype='string' name='[Calculation_224828153379586048]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='iif ([user-defined label (whether the subject is actually confused)]=0,&quot;Not Confused&quot;, &quot;Confused&quot;)' />
+      </column>
+      <column caption='Delta (1-3 Hz of power spectrum)1' datatype='real' name='[Delta (1-3 Hz of power spectrum)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='integer' name='[Subject ID]' role='dimension' type='ordinal' />
+      <column caption='Theta (4-7 Hz of power spectrum)1' datatype='real' name='[Theta (4-7 Hz of power spectrum)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Video ID]' role='dimension' type='ordinal' />
+      <column caption='Predefined Label (Whether The Subject Is Expected To Be Confused)' datatype='integer' name='[predefined label (whether the subject is expected to be confused)]' role='measure' type='quantitative' />
+      <column caption='User-Defined Label (Whether The Subject Is Actually Confused)' datatype='integer' name='[user-defined label (whether the subject is actually confused)]' role='measure' type='quantitative' />
+      <column-instance column='[Alpha 2 (Higher 8-11 Hz of power spectrum)]' derivation='None' name='[none:Alpha 2 (Higher 8-11 Hz of power spectrum):ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Beta 1 (Lower 12-29 Hz of power spectrum)]' derivation='None' name='[none:Beta 1 (Lower 12-29 Hz of power spectrum):ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Calculation_224828153379586048]' derivation='None' name='[none:Calculation_224828153379586048:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Delta (1-3 Hz of power spectrum)]' derivation='None' name='[none:Delta (1-3 Hz of power spectrum):ok]' pivot='key' type='ordinal' />
+      <column-instance column='[user-defined label (whether the subject is actually confused)]' derivation='None' name='[none:user-defined label (whether the subject is actually confused):ok]' pivot='key' type='ordinal' />
+      <group caption='Action (Alpha 2 (Higher 8-11 Hz of power spectrum),Beta 1 (Lower 12-29 Hz of power spectrum),Confusion)' hidden='true' name='[Action (Alpha 2 (Higher 8-11 Hz of power spectrum),Beta 1 (Lower 12-29 Hz of power spectrum),Confusion)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Alpha 2 (Higher 8-11 Hz of power spectrum):ok]' />
+          <groupfilter function='level-members' level='[none:Beta 1 (Lower 12-29 Hz of power spectrum):ok]' />
+          <groupfilter function='level-members' level='[Calculation_224828153379586048]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Alpha 2 (Higher 8-11 Hz of power spectrum),Beta 1 (Lower 12-29 Hz of power spectrum),User-Defined Label (Whether The Subject Is Actually Confused))' hidden='true' name='[Action (Alpha 2 (Higher 8-11 Hz of power spectrum),Beta 1 (Lower 12-29 Hz of power spectrum),User-Defined Label (Whether The Subject Is Actually Confused))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Alpha 2 (Higher 8-11 Hz of power spectrum):ok]' />
+          <groupfilter function='level-members' level='[none:Beta 1 (Lower 12-29 Hz of power spectrum):ok]' />
+          <groupfilter function='level-members' level='[none:user-defined label (whether the subject is actually confused):ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Alpha 2 (Higher 8-11 Hz of power spectrum)1,Beta 1 (Lower 12-29 Hz of power spectrum)1,Confusion)' hidden='true' name='[Action (Alpha 2 (Higher 8-11 Hz of power spectrum)1,Beta 1 (Lower 12-29 Hz of power spectrum)1,Confusion)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Alpha 2 (Higher 8-11 Hz of power spectrum):ok]' />
+          <groupfilter function='level-members' level='[none:Beta 1 (Lower 12-29 Hz of power spectrum):ok]' />
+          <groupfilter function='level-members' level='[Calculation_224828153379586048]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Confusion)' hidden='true' name='[Action (Confusion)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_224828153379586048]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Confusion,Delta (1-3 Hz of power spectrum))' hidden='true' name='[Action (Confusion,Delta (1-3 Hz of power spectrum))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_224828153379586048]' />
+          <groupfilter function='level-members' level='[none:Delta (1-3 Hz of power spectrum):ok]' />
+        </groupfilter>
+      </group>
+      <layout dim-ordering='alphabetic' dim-percentage='0.259603' measure-ordering='alphabetic' measure-percentage='0.740397' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Calculation_224828153379586048:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Confused&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%many-values%</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Not Confused&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='EEG Data &amp; Confusion' type='sheet' worksheet='Beta1/Alpha2 Correlation' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='EEG Data &amp; Confusion' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='EEG Data &amp; Confusion' type='sheet' worksheet='Delta/Confusion Correlation' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='EEG Data &amp; Confusion' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action3]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='EEG Data &amp; Confusion' type='sheet' worksheet='Confusion Obervations' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='EEG Data &amp; Confusion' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Alpha2/Confusion Correlation'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Mean EEG data' name='federated.1gzz5yt0bpg6ib1fe09u000yropi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1gzz5yt0bpg6ib1fe09u000yropi'>
+            <column caption='Alpha 2 (Higher 8-11 Hz of power spectrum)1' datatype='real' name='[Alpha 2 (Higher 8-11 Hz of power spectrum)]' role='measure' type='quantitative' />
+            <column caption='Beta 1 (Lower 12-29 Hz of power spectrum)1' datatype='real' name='[Beta 1 (Lower 12-29 Hz of power spectrum)]' role='measure' type='quantitative' />
+            <column caption='Confusion' datatype='string' name='[Calculation_224828153379586048]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='iif ([user-defined label (whether the subject is actually confused)]=0,&quot;Not Confused&quot;, &quot;Confused&quot;)' />
+            </column>
+            <column-instance column='[Alpha 2 (Higher 8-11 Hz of power spectrum)]' derivation='None' name='[none:Alpha 2 (Higher 8-11 Hz of power spectrum):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Alpha 2 (Higher 8-11 Hz of power spectrum)]' derivation='None' name='[none:Alpha 2 (Higher 8-11 Hz of power spectrum):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Beta 1 (Lower 12-29 Hz of power spectrum)]' derivation='None' name='[none:Beta 1 (Lower 12-29 Hz of power spectrum):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_224828153379586048]' derivation='None' name='[none:Calculation_224828153379586048:nk]' pivot='key' type='nominal' />
+            <column caption='User-Defined Label (Whether The Subject Is Actually Confused)' datatype='integer' name='[user-defined label (whether the subject is actually confused)]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1gzz5yt0bpg6ib1fe09u000yropi].[Action (Alpha 2 (Higher 8-11 Hz of power spectrum),Beta 1 (Lower 12-29 Hz of power spectrum),Confusion)]'>
+            <groupfilter function='crossjoin' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Alpha 2 (Higher 8-11 Hz of power spectrum):ok]' />
+              <groupfilter function='level-members' level='[none:Beta 1 (Lower 12-29 Hz of power spectrum):ok]' />
+              <groupfilter function='level-members' level='[Calculation_224828153379586048]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1gzz5yt0bpg6ib1fe09u000yropi].[Action (Alpha 2 (Higher 8-11 Hz of power spectrum)1,Beta 1 (Lower 12-29 Hz of power spectrum)1,Confusion)]'>
+            <groupfilter function='crossjoin' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Alpha 2 (Higher 8-11 Hz of power spectrum):ok]' />
+              <groupfilter function='level-members' level='[none:Beta 1 (Lower 12-29 Hz of power spectrum):ok]' />
+              <groupfilter function='level-members' level='[Calculation_224828153379586048]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1gzz5yt0bpg6ib1fe09u000yropi].[Action (Confusion)]'>
+            <groupfilter function='level-members' level='[Calculation_224828153379586048]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1gzz5yt0bpg6ib1fe09u000yropi].[Action (Confusion)]</column>
+            <column>[federated.1gzz5yt0bpg6ib1fe09u000yropi].[Action (Alpha 2 (Higher 8-11 Hz of power spectrum),Beta 1 (Lower 12-29 Hz of power spectrum),Confusion)]</column>
+            <column>[federated.1gzz5yt0bpg6ib1fe09u000yropi].[Action (Alpha 2 (Higher 8-11 Hz of power spectrum)1,Beta 1 (Lower 12-29 Hz of power spectrum)1,Confusion)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1gzz5yt0bpg6ib1fe09u000yropi].[none:Calculation_224828153379586048:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1gzz5yt0bpg6ib1fe09u000yropi].[none:Calculation_224828153379586048:nk]</rows>
+        <cols>[federated.1gzz5yt0bpg6ib1fe09u000yropi].[none:Alpha 2 (Higher 8-11 Hz of power spectrum):qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Beta1/Alpha2 Correlation'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Mean EEG data' name='federated.1gzz5yt0bpg6ib1fe09u000yropi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1gzz5yt0bpg6ib1fe09u000yropi'>
+            <column caption='Alpha 2 (Higher 8-11 Hz of power spectrum)1' datatype='real' name='[Alpha 2 (Higher 8-11 Hz of power spectrum)]' role='measure' type='quantitative' />
+            <column caption='Beta 1 (Lower 12-29 Hz of power spectrum)1' datatype='real' name='[Beta 1 (Lower 12-29 Hz of power spectrum)]' role='measure' type='quantitative' />
+            <column caption='Confusion' datatype='string' name='[Calculation_224828153379586048]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='iif ([user-defined label (whether the subject is actually confused)]=0,&quot;Not Confused&quot;, &quot;Confused&quot;)' />
+            </column>
+            <column-instance column='[Alpha 2 (Higher 8-11 Hz of power spectrum)]' derivation='None' name='[none:Alpha 2 (Higher 8-11 Hz of power spectrum):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Beta 1 (Lower 12-29 Hz of power spectrum)]' derivation='None' name='[none:Beta 1 (Lower 12-29 Hz of power spectrum):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_224828153379586048]' derivation='None' name='[none:Calculation_224828153379586048:nk]' pivot='key' type='nominal' />
+            <column caption='User-Defined Label (Whether The Subject Is Actually Confused)' datatype='integer' name='[user-defined label (whether the subject is actually confused)]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1gzz5yt0bpg6ib1fe09u000yropi].[Action (Confusion)]'>
+            <groupfilter function='level-members' level='[Calculation_224828153379586048]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1gzz5yt0bpg6ib1fe09u000yropi].[Action (Confusion)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.1gzz5yt0bpg6ib1fe09u000yropi].[none:Beta 1 (Lower 12-29 Hz of power spectrum):qk]' value='56' />
+            <encoding attr='space' class='0' field='[federated.1gzz5yt0bpg6ib1fe09u000yropi].[none:Beta 1 (Lower 12-29 Hz of power spectrum):qk]' field-type='quantitative' range-type='uniform' scope='cols' type='space' />
+            <format attr='subtitle' class='0' field='[federated.1gzz5yt0bpg6ib1fe09u000yropi].[none:Beta 1 (Lower 12-29 Hz of power spectrum):qk]' scope='cols' value='' />
+            <format attr='auto-subtitle' class='0' field='[federated.1gzz5yt0bpg6ib1fe09u000yropi].[none:Beta 1 (Lower 12-29 Hz of power spectrum):qk]' scope='cols' value='true' />
+            <encoding attr='space' class='0' field='[federated.1gzz5yt0bpg6ib1fe09u000yropi].[none:Alpha 2 (Higher 8-11 Hz of power spectrum):qk]' field-type='quantitative' range-type='uniform' scope='rows' type='space' />
+            <format attr='subtitle' class='0' field='[federated.1gzz5yt0bpg6ib1fe09u000yropi].[none:Alpha 2 (Higher 8-11 Hz of power spectrum):qk]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='0' field='[federated.1gzz5yt0bpg6ib1fe09u000yropi].[none:Alpha 2 (Higher 8-11 Hz of power spectrum):qk]' scope='rows' value='true' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1gzz5yt0bpg6ib1fe09u000yropi].[none:Calculation_224828153379586048:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1gzz5yt0bpg6ib1fe09u000yropi].[none:Alpha 2 (Higher 8-11 Hz of power spectrum):qk]</rows>
+        <cols>[federated.1gzz5yt0bpg6ib1fe09u000yropi].[none:Beta 1 (Lower 12-29 Hz of power spectrum):qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Beta1/Confusion Correlation'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Mean EEG data' name='federated.1gzz5yt0bpg6ib1fe09u000yropi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1gzz5yt0bpg6ib1fe09u000yropi'>
+            <column caption='Alpha 2 (Higher 8-11 Hz of power spectrum)1' datatype='real' name='[Alpha 2 (Higher 8-11 Hz of power spectrum)]' role='measure' type='quantitative' />
+            <column caption='Beta 1 (Lower 12-29 Hz of power spectrum)1' datatype='real' name='[Beta 1 (Lower 12-29 Hz of power spectrum)]' role='measure' type='quantitative' />
+            <column caption='Confusion' datatype='string' name='[Calculation_224828153379586048]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='iif ([user-defined label (whether the subject is actually confused)]=0,&quot;Not Confused&quot;, &quot;Confused&quot;)' />
+            </column>
+            <column-instance column='[Alpha 2 (Higher 8-11 Hz of power spectrum)]' derivation='None' name='[none:Alpha 2 (Higher 8-11 Hz of power spectrum):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Beta 1 (Lower 12-29 Hz of power spectrum)]' derivation='None' name='[none:Beta 1 (Lower 12-29 Hz of power spectrum):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Beta 1 (Lower 12-29 Hz of power spectrum)]' derivation='None' name='[none:Beta 1 (Lower 12-29 Hz of power spectrum):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_224828153379586048]' derivation='None' name='[none:Calculation_224828153379586048:nk]' pivot='key' type='nominal' />
+            <column caption='User-Defined Label (Whether The Subject Is Actually Confused)' datatype='integer' name='[user-defined label (whether the subject is actually confused)]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1gzz5yt0bpg6ib1fe09u000yropi].[Action (Alpha 2 (Higher 8-11 Hz of power spectrum),Beta 1 (Lower 12-29 Hz of power spectrum),Confusion)]'>
+            <groupfilter function='crossjoin' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Alpha 2 (Higher 8-11 Hz of power spectrum):ok]' />
+              <groupfilter function='level-members' level='[none:Beta 1 (Lower 12-29 Hz of power spectrum):ok]' />
+              <groupfilter function='level-members' level='[Calculation_224828153379586048]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1gzz5yt0bpg6ib1fe09u000yropi].[Action (Alpha 2 (Higher 8-11 Hz of power spectrum)1,Beta 1 (Lower 12-29 Hz of power spectrum)1,Confusion)]'>
+            <groupfilter function='crossjoin' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Alpha 2 (Higher 8-11 Hz of power spectrum):ok]' />
+              <groupfilter function='level-members' level='[none:Beta 1 (Lower 12-29 Hz of power spectrum):ok]' />
+              <groupfilter function='level-members' level='[Calculation_224828153379586048]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1gzz5yt0bpg6ib1fe09u000yropi].[Action (Confusion)]'>
+            <groupfilter function='level-members' level='[Calculation_224828153379586048]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1gzz5yt0bpg6ib1fe09u000yropi].[Action (Confusion)]</column>
+            <column>[federated.1gzz5yt0bpg6ib1fe09u000yropi].[Action (Alpha 2 (Higher 8-11 Hz of power spectrum),Beta 1 (Lower 12-29 Hz of power spectrum),Confusion)]</column>
+            <column>[federated.1gzz5yt0bpg6ib1fe09u000yropi].[Action (Alpha 2 (Higher 8-11 Hz of power spectrum)1,Beta 1 (Lower 12-29 Hz of power spectrum)1,Confusion)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1gzz5yt0bpg6ib1fe09u000yropi].[none:Calculation_224828153379586048:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1gzz5yt0bpg6ib1fe09u000yropi].[none:Calculation_224828153379586048:nk]</rows>
+        <cols>[federated.1gzz5yt0bpg6ib1fe09u000yropi].[none:Beta 1 (Lower 12-29 Hz of power spectrum):qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Beta2/Alpha2 Correlation'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Mean EEG data' name='federated.1gzz5yt0bpg6ib1fe09u000yropi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1gzz5yt0bpg6ib1fe09u000yropi'>
+            <column caption='Alpha 2 (Higher 8-11 Hz of power spectrum)1' datatype='real' name='[Alpha 2 (Higher 8-11 Hz of power spectrum)]' role='measure' type='quantitative' />
+            <column caption='Beta 2 (Higher 12-29 Hz of power spectrum)1' datatype='real' name='[Beta 2 (Higher 12-29 Hz of power spectrum)]' role='measure' type='quantitative' />
+            <column caption='Confusion' datatype='string' name='[Calculation_224828153379586048]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='iif ([user-defined label (whether the subject is actually confused)]=0,&quot;Not Confused&quot;, &quot;Confused&quot;)' />
+            </column>
+            <column-instance column='[Alpha 2 (Higher 8-11 Hz of power spectrum)]' derivation='None' name='[none:Alpha 2 (Higher 8-11 Hz of power spectrum):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Beta 2 (Higher 12-29 Hz of power spectrum)]' derivation='None' name='[none:Beta 2 (Higher 12-29 Hz of power spectrum):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_224828153379586048]' derivation='None' name='[none:Calculation_224828153379586048:nk]' pivot='key' type='nominal' />
+            <column caption='User-Defined Label (Whether The Subject Is Actually Confused)' datatype='integer' name='[user-defined label (whether the subject is actually confused)]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <sort class='natural' column='[federated.1gzz5yt0bpg6ib1fe09u000yropi].[none:Calculation_224828153379586048:nk]' direction='DESC' />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Polygon' />
+            <encodings>
+              <color column='[federated.1gzz5yt0bpg6ib1fe09u000yropi].[none:Calculation_224828153379586048:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1gzz5yt0bpg6ib1fe09u000yropi].[none:Alpha 2 (Higher 8-11 Hz of power spectrum):qk]</rows>
+        <cols>[federated.1gzz5yt0bpg6ib1fe09u000yropi].[none:Beta 2 (Higher 12-29 Hz of power spectrum):qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet lock-quick-filters='true' name='Confusion Obervations'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Mean EEG data' name='federated.1gzz5yt0bpg6ib1fe09u000yropi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1gzz5yt0bpg6ib1fe09u000yropi'>
+            <column caption='Alpha 2 (Higher 8-11 Hz of power spectrum)1' datatype='real' name='[Alpha 2 (Higher 8-11 Hz of power spectrum)]' role='measure' type='quantitative' />
+            <column caption='Beta 1 (Lower 12-29 Hz of power spectrum)1' datatype='real' name='[Beta 1 (Lower 12-29 Hz of power spectrum)]' role='measure' type='quantitative' />
+            <column caption='Confusion' datatype='string' name='[Calculation_224828153379586048]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='iif ([user-defined label (whether the subject is actually confused)]=0,&quot;Not Confused&quot;, &quot;Confused&quot;)' />
+            </column>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[Number of Records]' derivation='Count' name='[cnt:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Alpha 2 (Higher 8-11 Hz of power spectrum)]' derivation='None' name='[none:Alpha 2 (Higher 8-11 Hz of power spectrum):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Beta 1 (Lower 12-29 Hz of power spectrum)]' derivation='None' name='[none:Beta 1 (Lower 12-29 Hz of power spectrum):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_224828153379586048]' derivation='None' name='[none:Calculation_224828153379586048:nk]' pivot='key' type='nominal' />
+            <column caption='User-Defined Label (Whether The Subject Is Actually Confused)' datatype='integer' name='[user-defined label (whether the subject is actually confused)]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1gzz5yt0bpg6ib1fe09u000yropi].[Action (Alpha 2 (Higher 8-11 Hz of power spectrum)1,Beta 1 (Lower 12-29 Hz of power spectrum)1,Confusion)]'>
+            <groupfilter function='crossjoin' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Alpha 2 (Higher 8-11 Hz of power spectrum):ok]' />
+              <groupfilter function='level-members' level='[none:Beta 1 (Lower 12-29 Hz of power spectrum):ok]' />
+              <groupfilter function='level-members' level='[Calculation_224828153379586048]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1gzz5yt0bpg6ib1fe09u000yropi].[Action (Alpha 2 (Higher 8-11 Hz of power spectrum)1,Beta 1 (Lower 12-29 Hz of power spectrum)1,Confusion)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='legend'>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1gzz5yt0bpg6ib1fe09u000yropi].[none:Calculation_224828153379586048:nk]' />
+              <size column='[federated.1gzz5yt0bpg6ib1fe09u000yropi].[cnt:Number of Records:qk]' />
+              <wedge-size column='[federated.1gzz5yt0bpg6ib1fe09u000yropi].[cnt:Number of Records:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1gzz5yt0bpg6ib1fe09u000yropi].[cnt:Number of Records:qk]</field>
+                  <field>[federated.1gzz5yt0bpg6ib1fe09u000yropi].[none:Calculation_224828153379586048:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>51</value>
+                <value>&quot;Confused&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1gzz5yt0bpg6ib1fe09u000yropi].[cnt:Number of Records:qk]</field>
+                  <field>[federated.1gzz5yt0bpg6ib1fe09u000yropi].[none:Calculation_224828153379586048:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>49</value>
+                <value>&quot;Not Confused&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+    </worksheet>
+    <worksheet name='Delta/Confusion Correlation'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Mean EEG data' name='federated.1gzz5yt0bpg6ib1fe09u000yropi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1gzz5yt0bpg6ib1fe09u000yropi'>
+            <column caption='Alpha 2 (Higher 8-11 Hz of power spectrum)1' datatype='real' name='[Alpha 2 (Higher 8-11 Hz of power spectrum)]' role='measure' type='quantitative' />
+            <column caption='Beta 1 (Lower 12-29 Hz of power spectrum)1' datatype='real' name='[Beta 1 (Lower 12-29 Hz of power spectrum)]' role='measure' type='quantitative' />
+            <column caption='Confusion' datatype='string' name='[Calculation_224828153379586048]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='iif ([user-defined label (whether the subject is actually confused)]=0,&quot;Not Confused&quot;, &quot;Confused&quot;)' />
+            </column>
+            <column caption='Delta (1-3 Hz of power spectrum)1' datatype='real' name='[Delta (1-3 Hz of power spectrum)]' role='measure' type='quantitative' />
+            <column-instance column='[Alpha 2 (Higher 8-11 Hz of power spectrum)]' derivation='None' name='[none:Alpha 2 (Higher 8-11 Hz of power spectrum):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Beta 1 (Lower 12-29 Hz of power spectrum)]' derivation='None' name='[none:Beta 1 (Lower 12-29 Hz of power spectrum):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_224828153379586048]' derivation='None' name='[none:Calculation_224828153379586048:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Delta (1-3 Hz of power spectrum)]' derivation='None' name='[none:Delta (1-3 Hz of power spectrum):qk]' pivot='key' type='quantitative' />
+            <column caption='User-Defined Label (Whether The Subject Is Actually Confused)' datatype='integer' name='[user-defined label (whether the subject is actually confused)]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1gzz5yt0bpg6ib1fe09u000yropi].[Action (Alpha 2 (Higher 8-11 Hz of power spectrum),Beta 1 (Lower 12-29 Hz of power spectrum),Confusion)]'>
+            <groupfilter function='crossjoin' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Alpha 2 (Higher 8-11 Hz of power spectrum):ok]' />
+              <groupfilter function='level-members' level='[none:Beta 1 (Lower 12-29 Hz of power spectrum):ok]' />
+              <groupfilter function='level-members' level='[Calculation_224828153379586048]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1gzz5yt0bpg6ib1fe09u000yropi].[Action (Alpha 2 (Higher 8-11 Hz of power spectrum)1,Beta 1 (Lower 12-29 Hz of power spectrum)1,Confusion)]'>
+            <groupfilter function='crossjoin' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Alpha 2 (Higher 8-11 Hz of power spectrum):ok]' />
+              <groupfilter function='level-members' level='[none:Beta 1 (Lower 12-29 Hz of power spectrum):ok]' />
+              <groupfilter function='level-members' level='[Calculation_224828153379586048]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1gzz5yt0bpg6ib1fe09u000yropi].[Action (Confusion)]'>
+            <groupfilter function='level-members' level='[Calculation_224828153379586048]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1gzz5yt0bpg6ib1fe09u000yropi].[Action (Confusion)]</column>
+            <column>[federated.1gzz5yt0bpg6ib1fe09u000yropi].[Action (Alpha 2 (Higher 8-11 Hz of power spectrum),Beta 1 (Lower 12-29 Hz of power spectrum),Confusion)]</column>
+            <column>[federated.1gzz5yt0bpg6ib1fe09u000yropi].[Action (Alpha 2 (Higher 8-11 Hz of power spectrum)1,Beta 1 (Lower 12-29 Hz of power spectrum)1,Confusion)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1gzz5yt0bpg6ib1fe09u000yropi].[none:Calculation_224828153379586048:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1gzz5yt0bpg6ib1fe09u000yropi].[none:Calculation_224828153379586048:nk]</rows>
+        <cols>[federated.1gzz5yt0bpg6ib1fe09u000yropi].[none:Delta (1-3 Hz of power spectrum):qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Theta/Confusion Correlation'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Mean EEG data' name='federated.1gzz5yt0bpg6ib1fe09u000yropi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1gzz5yt0bpg6ib1fe09u000yropi'>
+            <column caption='Alpha 2 (Higher 8-11 Hz of power spectrum)1' datatype='real' name='[Alpha 2 (Higher 8-11 Hz of power spectrum)]' role='measure' type='quantitative' />
+            <column caption='Beta 1 (Lower 12-29 Hz of power spectrum)1' datatype='real' name='[Beta 1 (Lower 12-29 Hz of power spectrum)]' role='measure' type='quantitative' />
+            <column caption='Confusion' datatype='string' name='[Calculation_224828153379586048]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='iif ([user-defined label (whether the subject is actually confused)]=0,&quot;Not Confused&quot;, &quot;Confused&quot;)' />
+            </column>
+            <column caption='Theta (4-7 Hz of power spectrum)1' datatype='real' name='[Theta (4-7 Hz of power spectrum)]' role='measure' type='quantitative' />
+            <column-instance column='[Alpha 2 (Higher 8-11 Hz of power spectrum)]' derivation='None' name='[none:Alpha 2 (Higher 8-11 Hz of power spectrum):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Beta 1 (Lower 12-29 Hz of power spectrum)]' derivation='None' name='[none:Beta 1 (Lower 12-29 Hz of power spectrum):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_224828153379586048]' derivation='None' name='[none:Calculation_224828153379586048:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Theta (4-7 Hz of power spectrum)]' derivation='None' name='[none:Theta (4-7 Hz of power spectrum):qk]' pivot='key' type='quantitative' />
+            <column caption='User-Defined Label (Whether The Subject Is Actually Confused)' datatype='integer' name='[user-defined label (whether the subject is actually confused)]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1gzz5yt0bpg6ib1fe09u000yropi].[Action (Alpha 2 (Higher 8-11 Hz of power spectrum),Beta 1 (Lower 12-29 Hz of power spectrum),Confusion)]'>
+            <groupfilter function='crossjoin' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Alpha 2 (Higher 8-11 Hz of power spectrum):ok]' />
+              <groupfilter function='level-members' level='[none:Beta 1 (Lower 12-29 Hz of power spectrum):ok]' />
+              <groupfilter function='level-members' level='[Calculation_224828153379586048]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1gzz5yt0bpg6ib1fe09u000yropi].[Action (Alpha 2 (Higher 8-11 Hz of power spectrum)1,Beta 1 (Lower 12-29 Hz of power spectrum)1,Confusion)]'>
+            <groupfilter function='crossjoin' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Alpha 2 (Higher 8-11 Hz of power spectrum):ok]' />
+              <groupfilter function='level-members' level='[none:Beta 1 (Lower 12-29 Hz of power spectrum):ok]' />
+              <groupfilter function='level-members' level='[Calculation_224828153379586048]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1gzz5yt0bpg6ib1fe09u000yropi].[Action (Confusion)]'>
+            <groupfilter function='level-members' level='[Calculation_224828153379586048]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1gzz5yt0bpg6ib1fe09u000yropi].[Action (Confusion)]</column>
+            <column>[federated.1gzz5yt0bpg6ib1fe09u000yropi].[Action (Alpha 2 (Higher 8-11 Hz of power spectrum),Beta 1 (Lower 12-29 Hz of power spectrum),Confusion)]</column>
+            <column>[federated.1gzz5yt0bpg6ib1fe09u000yropi].[Action (Alpha 2 (Higher 8-11 Hz of power spectrum)1,Beta 1 (Lower 12-29 Hz of power spectrum)1,Confusion)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1gzz5yt0bpg6ib1fe09u000yropi].[none:Calculation_224828153379586048:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1gzz5yt0bpg6ib1fe09u000yropi].[none:Calculation_224828153379586048:nk]</rows>
+        <cols>[federated.1gzz5yt0bpg6ib1fe09u000yropi].[none:Theta (4-7 Hz of power spectrum):qk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='EEG Data &amp; Confusion'>
+      <style>
+        <style-rule element='dash-container'>
+          <format attr='background-color' id='dash-zone_15' value='#f5f5f5' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='100000' id='15' param='vert' type='layout-flow' w='100000' x='0' y='0'>
+            <zone h='5320' id='14' type='title' w='99276' x='362' y='639' />
+            <zone h='93402' id='5' param='horz' type='layout-flow' w='99276' x='362' y='5959'>
+              <zone h='93402' id='3' type='layout-basic' w='72843' x='362' y='5959'>
+                <zone h='33819' id='7' name='Confusion Obervations' w='72843' x='362' y='65542'>
+                  <layout-cache minheight='203' type-h='scalable' type-w='fixed' />
+                </zone>
+                <zone h='59583' id='9' name='Beta1/Alpha2 Correlation' w='72843' x='362' y='5959' />
+              </zone>
+              <zone fixed-size='438' h='93402' id='16' is-fixed='true' type='layout-basic' w='26433' x='73205' y='5959'>
+                <zone h='42360' id='4' param='vert' type='layout-flow' w='26433' x='73205' y='5959'>
+                  <zone fixed-size='127' h='14363' id='10' is-fixed='true' name='Theta/Confusion Correlation' show-title='false' w='26433' x='73205' y='5959'>
+                    <layout-cache minwidth='200' type-h='fixed' type-w='scalable' />
+                  </zone>
+                  <zone fixed-size='126' h='14256' id='11' is-fixed='true' name='Beta1/Confusion Correlation' show-title='false' w='26433' x='73205' y='20322'>
+                    <layout-cache minwidth='200' type-h='fixed' type-w='scalable' />
+                  </zone>
+                </zone>
+                <zone h='51042' id='17' param='vert' type='layout-flow' w='26433' x='73205' y='48319'>
+                  <zone fixed-size='142' h='15958' id='12' is-fixed='true' name='Alpha2/Confusion Correlation' show-title='false' w='26433' x='73205' y='48319'>
+                    <layout-cache minwidth='200' type-h='fixed' type-w='scalable' />
+                  </zone>
+                  <zone fixed-size='118' h='13405' id='13' is-fixed='true' name='Delta/Confusion Correlation' show-title='false' w='26433' x='73205' y='64277'>
+                    <layout-cache minwidth='200' type-h='cell' type-w='scalable' />
+                  </zone>
+                  <zone h='7661' id='8' name='Confusion Obervations' pane-specification-id='0' param='[federated.1gzz5yt0bpg6ib1fe09u000yropi].[none:Calculation_224828153379586048:nk]' type='color' w='26433' x='73205' y='77682' />
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+        </zone>
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='89'>
+    <window class='dashboard' maximized='true' name='EEG Data &amp; Confusion'>
+      <viewpoints>
+        <viewpoint name='Alpha2/Confusion Correlation' />
+        <viewpoint name='Beta1/Alpha2 Correlation'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Beta1/Confusion Correlation' />
+        <viewpoint name='Confusion Obervations'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Delta/Confusion Correlation'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Theta/Confusion Correlation' />
+      </viewpoints>
+      <active id='9' />
+    </window>
+    <window class='worksheet' name='Confusion Obervations'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1gzz5yt0bpg6ib1fe09u000yropi].[none:Calculation_224828153379586048:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.1gzz5yt0bpg6ib1fe09u000yropi].[cnt:Number of Records:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Beta2/Alpha2 Correlation'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1gzz5yt0bpg6ib1fe09u000yropi].[none:Calculation_224828153379586048:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Beta1/Alpha2 Correlation'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1gzz5yt0bpg6ib1fe09u000yropi].[none:Calculation_224828153379586048:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Alpha2/Confusion Correlation'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1gzz5yt0bpg6ib1fe09u000yropi].[none:Calculation_224828153379586048:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Theta/Confusion Correlation'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1gzz5yt0bpg6ib1fe09u000yropi].[none:Calculation_224828153379586048:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Beta1/Confusion Correlation'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1gzz5yt0bpg6ib1fe09u000yropi].[none:Calculation_224828153379586048:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Delta/Confusion Correlation'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1gzz5yt0bpg6ib1fe09u000yropi].[none:Calculation_224828153379586048:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='127' name='Alpha2/Confusion Correlation' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAAB/CAYAAAC5QM2nAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAKqUlEQVR4nO3df1TV9R3H8Wfd4S5xHPcCFogyYDRRj8oPxTRZ2joY5IK5VurmROfETjZt
+      VNtqR6Zj2Y6nZU3njylSLPJUdkIaBNPWNDUMhXAKLgTCCPwB95IH7x10u/vj3kv85iLkV/y8
+      H39xvt/Pl+/n3PN9fT/v7/d+P997k91utyOEom7WugNCaEkCIJQmARBKkwAIpUkAhNIkAEJp
+      EgChNAmAUJoEQChNAiCUJgEQSpMACKVJAITSJABCaRIAoTQJgFCaBEAoTQIglCYBEEqTAAil
+      SQCE0iQAQmkSAKE0CYBQmgRAKE0CIJQmARBKkwAo7sqVK1p3QVMSAKE0CYBoV1xcrHUXrjkJ
+      gLghJD61h8Sn9gx4OwmAaDd16lStu3DNfUPrDlxTtkaOv/ESOUcrOW+xMWJkMFPmLeCns0PQ
+      D+V+WirJz9xNXtklWgkkad1a4v2HcgcDUJrB+voE1rrRgeLiYuVCoE4AbJ+R/+wGjgYuZsUf
+      H2WMlwdtpiqKPriAmRCG8vhsOJjNh2N/wcaVweh1Q/iPxZBTJgBN72VROCqZ9ORovJzLPIyh
+      zIoPHfJ9NdTXMSZq+B38qp39QZkANFB02Ezs4q8O/h7ZGjmevYNXj9VwuVWH59gZLH54EdG+
+      riO5lIz1nzJrgScH9+bzUc1lWkeM5u6HH+ehCV7QkM/6tLeoAyhKoQjAWQJFlqxnBys6lyKl
+      GaSciGL7sgjH7j97j23b3uLUeQs2nSe3TZzLz5LjCXN1uqWS/MyXKTh1HguejI16kGVLZzK6
+      PWg2Pj+Zy849BzhzqRVGjCTYTw8x7n1KUgLdqGx1nKu7nZiQvhpZOZm1kRzmk7oxmgD9l5hK
+      3+D5Dbtg3QqiXQdhXQGvHkwgKTmdpQF6vqzdx4bn91Hx/ELC/eNZuz2e0owUTkRtx3lcA9DQ
+      bycbKNx5kFEL03hhvBGPthY+Pb2f6noIC3Ou37wXy/2PsfERIx5tJspz/8qLWSP5ffIk9ID1
+      ZBbPvNLKvNUbWR2gR9fWwoVDO9n2v6v+5G54atwFuniBhsCAvuv85g8orJzB8uQYAvQ6wANj
+      xEKWx9byj4MdDt/ABFKWxzMlQI8O8AiKYZrRgnXQnbRgsXgzOsiIB4CHF2OmJBIb5lxdfYTy
+      iYuZP9613sj4+UuZVfNvSqwATRzOq+WuNSuY5ewbHl7c6jPS7R6odvYHVUaAUbfiX/cRDdB7
+      CGprOBsaQVCXxUHjJmI60ueWQySEmQk3senpxzkUNo2I6dOImfRtfJ0XEs2fVHM6t4CU3K7b
+      BZJkBvxr+cQSxb2D6KaUQDcqXSBjA9+gqhoi+iyDtOUf+0uevaOFC+fO8p+yPDa/coHwlU/x
+      ULie1lYrgUnr+r6debNOkSF96CjyefkTOc2TQ/88TktvTYKC+U5VFdW2zotrz5zCGHANb+J7
+      eHFr6GTuTlpF2uoISo9UADAqKBRT2Smaet1Qj6fpLNWDqMVUO/uDMgEA/7jlxF3M5E+Zx6i3
+      Oo7yNlMV7+cXOS5Qve8gLuwYu7Nc69swlb7KzkNB3Pe9wQfAYPDBdK4GUxvQ1sKnH+Ww5fWS
+      Di1Osm/7AcobrdgcnaO8pJxv+vo4Vt9+B7GX97L1zXLH/8CGtbGK9zP3cRKAcObENbF32wFq
+      rDbH+vpjZOV03EffVHwWSI0SCEA3mvgnf4fvngyee2IXl1tp/ybYcd7TM2nxE7Rm73Cud94G
+      /e3Pv7oDNAj6mPkkntjC2lW7aR0xkuAp8fxo7iTKKl0tQomceJrXX/gNfzlvwTZiJMExC3l0
+      kfOqRBdC4pNr8Mz6O+tWn8di0+F5Wxgz5v2E6c7/4B+3hiWfb2HzE69xuXUEfpMTWDJnEtW9
+      DnviJrvdbte6E0I7V65c4ZZbbtG6G4PmehAu55kFA9pOmRJI9E9KICGGqYGe+V2kBFLcjVIC
+      XS0pgUQ7FUsgGQEUp/oIINcAot1wfxSidsGi9r+D9mT3uK7rcimBhNI0GAFKyUjZSvF3F5Ke
+      Ohufjqsa8lm/A1asjf96Hj2TKZF9Gs5n/6ulTQkUOJcfGN+loCKWheGDnDblbmhkSmS/hnsJ
+      dDU0KoE8iUyYwcevFboxUWRouKZE/jo5hjFeHoBrSuT0IR9tGurrGBM0vA5+VWl3EewfxwOh
+      aeSVzmFZRO8FSEtlPpkvFzimCY7wY3LCUpLjw/ACSjNS2OqYd0hayluOPwKTWNdtNJApke5Q
+      7ewPmt4F0jEh4R7yXyygNiKx20QUABoK2bTzDFFL0lgx3sjN1hre27aZ52y/4ul5o4lYtp3t
+      CW6UQDIl0i1SAl1rPrHcN+4o+472/Lhixb8KMf5wJfHOaYA6fTDfX/lj/Are4aStx016JlMi
+      RS80/h5AR/j9iezfWEB1zHw6n6AvUlv1LULmdCmP9OFMCC6g/iJEuFu8y5RIt6h29gfNAwB4
+      xXDf5D/w5qHZpIZ/TfuQKZFukRJIEzpCEuLxfKeAii87Lh9FUOjnnO06m8NawemaMQSMGsg+
+      ZEqk6Nl1EABAP535d31MzruNnRaHz4mjOedv5JebaANs1hoObHudS3PvZZLrzofBB7+LJyiu
+      bQOgzeqcUtiFTInsn2pnf7geSiAn/7gHCHz8BQ4ZkzouZM1yG5kvr2N1+23QlaTGj6b9zp9+
+      Kg8l/5etf15NrgU8wx/k6cdm022AkCmR/VKxBJKnQRXX8WnQ4R4AeRhODMpwPvivlowAiruR
+      RoCrISOAUJqMAIpT/WdSJQCinYrTI6UEEkqTAAilSQCE0iQAQmlyESyUJiOAUJoEQChNAiCU
+      JgEQSpMACKVJAITSrpsZYeL6YGs8TvbWLI6es4DnWGYsfphF0b70/ZK7FirzM9mdV8Yl50y0
+      pR1f6OV2Gw3YhXCxlNl3p6badxU12VvtdntrU5F9V2qqfXeZpc/N6gvS7avSc+3Vli/s9i8s
+      9urcdPuq9AJ7/QDbaEFKINGu6XAelTMfYUmM4+VbHsYYljwyk8q8w72/jcJ2mv2F3ixaM49g
+      vQ50eoLnrWGRdyH7T9vcb6MRCYBwsnKm3ExUZEinckcXEkmUuZwzvb1upbaCU8HRRHYqZbyI
+      jA7mVEWt+200YZUACBcz5iY/fHy6LvfBx68Js7mXzZrNWH2N3X5fQW/0xWpudr+NJswSANGR
+      EYN312XeGIz9bGUwdF9oMGAcYBstSABEBya6n5CbMZv62aqn4cFsxjTANlqQAAgnAwafSzR1
+      u9ptoumSDz2dwAHwNqBvNHV7O7bV1IjeNZy400YTBgmAcNEzbryBEyXVnV4taasu4YRhPON6
+      +w2ToHAm1hynpNPb51ooOV7DxPAg99toQi8BEF/xuTOBsCNbeOmY412sbaZjvLTlCGEJd9Lt
+      2thFN4F74prJ3vS2452kNis1b28iuzmOeybo3G+jEZkQIzrp95vghnzWp33ItE6/fDl8vwmW
+      AAilSQkklCYBEEqTAAilSQCE0iQAQmkSAKE0CYBQmgRAKE0CIJQmARBKkwAIpUkAhNIkAEJp
+      EgChNAmAUJoEQChNAiCUJgEQSpMACKVJAITSJABCaRIAoTQJgFCaBEAoTQIglCYBEEqTAAil
+      SQCE0iQAQmkSAKE0CYBQmgRAKE0CIJQmARBKkwAIpf0fkCEYocgFKhUAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Beta1/Alpha2 Correlation' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='127' name='Beta1/Confusion Correlation' width='192'>
+      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
+      +z8eZRdWYOlaWgAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Beta2/Alpha2 Correlation' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='164' name='Confusion Obervations' width='164'>
+      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
+    </thumbnail>
+    <thumbnail height='127' name='Delta/Confusion Correlation' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='EEG Data &amp; Confusion' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='127' name='Theta/Confusion Correlation' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
